@@ -1,0 +1,183 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProdusActivity"
+    android:background="@color/white">
+
+
+    <com.mancj.materialsearchbar.MaterialSearchBar
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mt_hint="Search"
+        app:mt_speechMode="false">
+
+    </com.mancj.materialsearchbar.MaterialSearchBar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_search"
+        android:layout_width="match_parent"
+        android:layout_height="585dp"
+        android:layout_below="@+id/checkBox4"
+        android:layout_marginTop="62dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/textView3"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="3dp"
+        android:layout_toEndOf="@+id/checkBox5"
+        android:text="Dry"
+        android:textSize="6sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/checkBox4"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="22dp"
+        android:layout_toEndOf="@+id/checkBox7"
+        android:background="@color/babyblue3"
+        android:fontFamily="@font/arbutus"
+        android:text="Search"
+        android:textAlignment="center"
+        android:textColor="#A3B6BF"
+
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="83dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/textView3"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="3dp"
+        android:text="Sensitive"
+        android:textSize="6sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+
+        android:layout_below="@+id/textView3"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="3dp"
+        android:layout_toEndOf="@+id/checkBox2"
+        android:text="Oily"
+        android:textSize="6sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="83dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/textView3"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="3dp"
+        android:layout_toEndOf="@+id/checkBox3"
+        android:minHeight="48dp"
+        android:text="Normal"
+        android:textSize="6sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+
+        android:layout_width="83dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/textView4"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="2dp"
+        android:text="Moisturizer"
+        android:textSize="6sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="83dp"
+        android:layout_height="20dp"
+
+        android:layout_below="@+id/textView4"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/checkBox"
+        android:text="Cleanser"
+        android:textSize="6sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox7"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/textView4"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="3dp"
+        android:layout_toEndOf="@+id/checkBox6"
+        android:text="Treatment"
+        android:textSize="6sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox8"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/checkBox7"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@+id/checkBox10"
+        android:text="Face Mask"
+        android:textSize="6sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox9"
+        android:layout_width="83dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/checkBox"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="2dp"
+        android:text="Eye cream"
+        android:textSize="6sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox10"
+        android:layout_width="83dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/checkBox6"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/checkBox9"
+        android:text="Sun protect"
+        android:textSize="6sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_bar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="156dp"
+        android:text=" Choose your skin type: "
+        android:textColor="@color/black"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="97dp"
+        android:text=" Choose the type of product: "
+        android:textColor="@color/black"
+        android:textSize="8sp" />
+
+
+</RelativeLayout>

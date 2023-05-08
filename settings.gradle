@@ -1,0 +1,2 @@
+rootProject.name = "YourSkin"
+include ':app'
